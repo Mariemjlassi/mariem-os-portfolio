@@ -1,8 +1,8 @@
-# 🖥️ MARIEM-OS — Retro Portfolio OS
+# MARIEM-OS — Retro Portfolio OS
 
 Un portfolio interactif simulant Windows 95 + MS-DOS, construit avec React + Vite.
 
-## 🚀 Démarrage rapide
+## Démarrage rapide
 
 ```bash
 # Installer les dépendances
@@ -15,23 +15,26 @@ npm run dev
 npm run build
 ```
 
-## 📝 Personnalisation
+## Personnalisation
 
 **Tout le contenu est dans un seul fichier :**
+
 ```
 src/data/portfolioData.js
 ```
 
 Modifie `USER`, `PROJECTS`, `SKILLS`, `EXPERIENCE`, etc. dans ce fichier.
 
-## 🌐 Déploiement sur Netlify
+## Déploiement sur Netlify
 
 ### Option 1 — Glisser-déposer (le plus simple)
+
 1. `npm run build`
 2. Va sur [netlify.com](https://netlify.com)
 3. Glisse le dossier `dist/` dans Netlify Drop
 
 ### Option 2 — Via GitHub (recommandé)
+
 1. Push ce projet sur GitHub
 2. Va sur [netlify.com](https://netlify.com) → "New site from Git"
 3. Connecte ton repo GitHub
@@ -39,9 +42,9 @@ Modifie `USER`, `PROJECTS`, `SKILLS`, `EXPERIENCE`, etc. dans ce fichier.
 5. Publish directory: `dist`
 6. Clique Deploy !
 
-Le fichier `netlify.toml` est déjà configuré ✓
+Le fichier `netlify.toml` est déjà configuré.
 
-## 🎮 Fonctionnalités
+## Fonctionnalités
 
 - **Boot BIOS** — Séquence de démarrage animée
 - **DOS Loader** — Barre de progression style Windows
@@ -60,12 +63,12 @@ Le fichier `netlify.toml` est déjà configuré ✓
 - **Corbeille** — Fonctionnelle (affiche "vide")
 - **Effets CRT** — Scanlines + vignette
 
-## 📁 Structure
+## Structure
 
 ```
 src/
 ├── data/
-│   └── portfolioData.js    ← ✏️ MODIFIER ICI
+│   └── portfolioData.js    <- MODIFIER ICI
 ├── components/
 │   ├── BiosScreen.jsx
 │   ├── DosLoader.jsx
