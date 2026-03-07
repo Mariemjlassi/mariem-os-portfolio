@@ -25,24 +25,6 @@ src/data/portfolioData.js
 
 Modifie `USER`, `PROJECTS`, `SKILLS`, `EXPERIENCE`, etc. dans ce fichier.
 
-## Déploiement sur Netlify
-
-### Option 1 — Glisser-déposer (le plus simple)
-
-1. `npm run build`
-2. Va sur [netlify.com](https://netlify.com)
-3. Glisse le dossier `dist/` dans Netlify Drop
-
-### Option 2 — Via GitHub (recommandé)
-
-1. Push ce projet sur GitHub
-2. Va sur [netlify.com](https://netlify.com) → "New site from Git"
-3. Connecte ton repo GitHub
-4. Build command: `npm run build`
-5. Publish directory: `dist`
-6. Clique Deploy !
-
-Le fichier `netlify.toml` est déjà configuré.
 
 ## Fonctionnalités
 
