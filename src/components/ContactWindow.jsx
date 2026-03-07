@@ -244,9 +244,9 @@ export default function ContactWindow() {
       <div style={gStyle}>
         <GL>Send Message</GL>
         {[
-          {label:'Your Name *', ph:'Sarra Ben Ali',          val:name,    set:setName,    type:'text'},
-          {label:'Your Email',  ph:'sarra@example.com',      val:email,   set:setEmail,   type:'email'},
-          {label:'Subject',     ph:"Let's work together!",   val:subject, set:setSubject, type:'text'},
+          {label:'Your Name *', ph:'Anonymous_95',          val:name,    set:setName,    type:'text'},
+          {label:'Your Email',  ph:'anon@aol.com',      val:email,   set:setEmail,   type:'email'},
+          {label:'Subject',     ph:"dialup_connection.exe",   val:subject, set:setSubject, type:'text'},
         ].map(f => (
           <div key={f.label} style={{marginBottom:7}}>
             <div style={{fontSize:11,marginBottom:2}}>{f.label}</div>
@@ -257,7 +257,7 @@ export default function ContactWindow() {
         <div style={{marginBottom:7}}>
           <div style={{fontSize:11,marginBottom:2}}>Message *</div>
           <textarea value={message} onChange={e => setMessage(e.target.value)}
-            placeholder="Your message..."
+            placeholder="Connecting... please wait_"
             style={{...iStyle,height:68,resize:'none',display:'block',
               padding:'4px 6px',lineHeight:1.5}}/>
         </div>
