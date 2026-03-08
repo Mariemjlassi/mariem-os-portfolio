@@ -356,43 +356,28 @@ export default function Terminal({ onOpenWindow, onClose }) {
     split: '#00cc33',
   };
 
-  const mobile = window.innerWidth < 768;
-
-  const handleSend = () => {
-    if (!input.trim()) return;
-    handleCommand(input);
-    setInput('');
-    inputRef.current?.focus();
-  };
-
   return (
     <div
-      style={{ height: '100%', background: '#0a0a0a', display: 'flex', flexDirection: 'column', padding: 8 }}
+      style={{ height: '100%', background: '#0a0a0a', overflowY: 'auto', padding: 8, boxSizing: 'border-box' }}
       onClick={() => inputRef.current?.focus()}
     >
-      <div style={{ flex: 1, overflowY: 'auto', overflowX: 'hidden' }}>
-        {lines.map((line, i) => (
-          <div key={i} style={{
-            fontFamily: "'Share Tech Mono', monospace",
-            fontSize: mobile ? 12 : 13,
-            lineHeight: 1.55,
-            color: typeColor[line.type] || '#00cc33',
-            whiteSpace: 'pre-wrap',
-            wordBreak: 'break-word',
-          }}>
-            {line.text || '\u00A0'}
-          </div>
-        ))}
-        <div ref={endRef} />
-      </div>
+      {/* Output lines */}
+      {lines.map((line, i) => (
+        <div key={i} style={{
+          fontFamily: "'Share Tech Mono', monospace",
+          fontSize: 13,
+          lineHeight: 1.55,
+          color: typeColor[line.type] || '#00cc33',
+          whiteSpace: 'pre-wrap',
+          wordBreak: 'break-word',
+        }}>
+          {line.text || '\u00A0'}
+        </div>
+      ))}
 
-      {/* Input line */}
-      <div style={{
-        display: 'flex', alignItems: 'center',
-        borderTop: '1px solid #0a3a0a', paddingTop: 6, marginTop: 4,
-        gap: 4,
-      }}>
-        <span style={{ fontFamily: "'Share Tech Mono'", fontSize: mobile ? 11 : 13, color: '#00cc33', whiteSpace: 'nowrap' }}>
+      {/* Input — directly after last line */}
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <span style={{ fontFamily: "'Share Tech Mono'", fontSize: 13, color: '#00cc33', whiteSpace: 'nowrap' }}>
           {PROMPT}
         </span>
         <input
@@ -400,56 +385,16 @@ export default function Terminal({ onOpenWindow, onClose }) {
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          enterKeyHint="send"
           style={{
             background: 'transparent', border: 'none', outline: 'none',
             color: '#ffffff', fontFamily: "'Share Tech Mono', monospace",
-            fontSize: mobile ? 14 : 13, flex: 1, caretColor: '#00ff41',
-            minWidth: 0,
+            fontSize: 13, flex: 1, caretColor: '#00ff41', minWidth: 0,
           }}
           autoComplete="off"
-          autoCorrect="off"
-          autoCapitalize="off"
           spellCheck={false}
         />
-        {/* Mobile send button */}
-        {mobile && (
-          <button
-            onClick={handleSend}
-            style={{
-              background: '#003300', border: '1px solid #00cc33',
-              color: '#00ff41', fontFamily: "'Share Tech Mono', monospace",
-              fontSize: 12, padding: '4px 10px', flexShrink: 0,
-              cursor: 'pointer',
-            }}
-          >
-            ▶
-          </button>
-        )}
       </div>
-
-      {/* Mobile quick commands */}
-      {mobile && (
-        <div style={{
-          display: 'flex', gap: 4, marginTop: 6,
-          flexWrap: 'wrap',
-          borderTop: '1px solid #003300', paddingTop: 6,
-        }}>
-          {['HELP', 'WHOAMI', 'DIR', 'SYSINFO', 'NEOFETCH', 'CLS'].map(cmd => (
-            <button
-              key={cmd}
-              onClick={() => { handleCommand(cmd); setInput(''); }}
-              style={{
-                background: '#001a00', border: '1px solid #005500',
-                color: '#00cc33', fontFamily: "'Share Tech Mono', monospace",
-                fontSize: 10, padding: '3px 8px', cursor: 'pointer',
-              }}
-            >
-              {cmd}
-            </button>
-          ))}
-        </div>
-      )}
+      <div ref={endRef} />
     </div>
   );
 }
