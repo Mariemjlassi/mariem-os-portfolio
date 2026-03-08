@@ -40,16 +40,16 @@ export default function CvWindow() {
 ║         ${USER.name.padEnd(35)}║
 ╚═══════════════════════════════════════════╝
 
-COORDONNÉES
-─────────────
-[Email]    jlassiimariem52@gmail.com
+CONTACT
+───────
+[Email]    mariemjlassi515@gmail.com
 [LinkedIn] linkedin.com/in/mariem-jlassi
 [GitHub]   github.com/Mariemjlassi
 [Tel]      +216 94 381 426
-[Loc]      Tunis, Tunisia
+[Loc]      Borj El Amri, Tunisia
 
-PROFIL
-──────
+PROFILE
+───────
 First-year engineering student holding a Bachelor's
 degree in Information Systems Development, with proven
 hands-on experience as a Full Stack Developer.
@@ -63,8 +63,8 @@ Experience integrating AI models (TensorFlow),
 automated testing (Cypress), and working in
 Agile/Scrum environments.
 
-COMPÉTENCES TECHNIQUES
-───────────────────────
+TECHNICAL SKILLS
+────────────────
 Frontend  : JavaScript, HTML5, CSS3, Angular, React,
             PrimeNG, Responsive Design
 Backend   : Java (Spring Boot, Spring Security,
@@ -73,57 +73,59 @@ Databases : PostgreSQL, MySQL, MongoDB, SQLite
 Tools     : Git, Postman, Swagger, Jira, Cypress,
             JUnit, Agile/Scrum
 
-EXPÉRIENCE & PROJETS
-────────────────────
+EXPERIENCE & PROJECTS
+─────────────────────
 2026
   Smart Intersection Simulation
   iTeam University — Academic Project
-  → Simulation d'intersection 4 voies avec feux
-    adaptatifs temps réel, priorité ambulance,
-    gestion piétons, module météo, détection collision.
+  → Real-time 4-way smart intersection simulation.
+  → Adaptive traffic lights, ambulance priority,
+    pedestrian management, weather module,
+    collision detection.
   → Stack: Python, Pygame, NumPy, SQLite3.
 
-Fév 2025 — Mai 2025
-  Career Management App (OrgaRH) — PFE noté EXCELLENT
+Feb 2025 — May 2025
+  Career Management App (OrgaRH) — Rated EXCELLENT
   ASSAD Batterie — Bou Argoub
-  → Full-stack app de gestion des carrières RH.
-  → Auth Spring Security + reCAPTCHA, dashboard
-    prédictif TensorFlow, RBAC, messaging interne.
-  → Tests E2E Cypress, sprints Agile/Scrum Jira.
+  → Full-stack HR career management platform.
+  → reCAPTCHA auth, predictive TensorFlow dashboard,
+    RBAC, internal messaging system.
+  → E2E testing Cypress, Agile/Scrum Jira.
   → Stack: Spring Boot, Angular, PrimeNG, PostgreSQL,
     TensorFlow, Swagger, Cypress, Git.
 
-Jan 2024 — Fév 2024
-  Stagiaire Full Stack Developer
-  CNI — Centre National de l'Informatique, Tunis
-  → App web calcul taxes locatives terrains non bâtis.
-  → Sécurisation Spring Security, REST API.
+Jan 2024 — Feb 2024
+  Full Stack Developer Intern
+  CNI — National Computer Center, Tunis
+  → Web app for rental tax calculation on
+    undeveloped land.
+  → Spring Security hardening, REST API.
   → Stack: Angular, Spring Boot, PostgreSQL.
 
-FORMATION
+EDUCATION
 ─────────
 2025 — 2028
   Bachelor of Engineering in Computer Science
-  iTeam University, Tunisia (1ère année — Tronc commun)
+  iTeam University, Tunisia (1st year — Common Core)
 
 2022 — 2025
-  Licence en Technologies de l'Informatique
-  ISET Radès — Développement des Systèmes d'Information
+  Bachelor's in Information Technology
+  ISET Rades — Information Systems Development
 
 2021
-  Baccalauréat en Sciences Expérimentales
-  Lycée Ibn Mandhour, Borj El Amri
+  Baccalaureate in Experimental Sciences
+  Ibn Mandhour High School, Borj El Amri
 
-LANGUES & ACTIVITÉS
-────────────────────
-Arabe    ████████████ Natif
-Français ████████░░░░ Intermédiaire
-Anglais  ████████░░░░ Intermédiaire
+LANGUAGES & ACTIVITIES
+────────────────────────
+Arabic
+French
+English
 
-[✓] Membre — Securinets iTeam University
-[✓] HR Manager — IEEE Student Branch Radès
+C:\\> Member — Securinets iTeam University
+C:\\> HR Manager — IEEE Student Branch Rades
 
-[Fin du fichier — CV.TXT v${new Date().getFullYear()}]`;
+[End of file — CV.TXT v${new Date().getFullYear()}]`;
 
   const downloadPDF = () => {
     const a = document.createElement('a');
@@ -142,8 +144,8 @@ Anglais  ████████░░░░ Intermédiaire
         borderBottom: '1px solid #808080',
         flexShrink: 0,
       }}>
-        <button style={btnStyle} onClick={downloadPDF} title="Télécharger mon CV PDF">
-          <PxSave /> Télécharger .PDF
+        <button style={btnStyle} onClick={downloadPDF} title="Download my CV PDF">
+          <PxSave /> Download .PDF
         </button>
       </div>
 

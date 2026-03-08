@@ -1,57 +1,59 @@
 // ============================================================
-//  📝 FICHIER DE CONFIGURATION DU PORTFOLIO
-//  → Modifie uniquement ce fichier pour personnaliser tout !
+//  PORTFOLIO CONFIGURATION FILE
+//  → Edit only this file to customize everything!
 // ============================================================
 
 export const USER = {
   name: "Mariem Jlassi",
   title: "Full-Stack Developer | Engineering Student",
-  location: "Borj El Amri, Tunisia 🇹🇳",
+  location: "Borj El Amri, Tunisia",
   status: "OPEN TO WORK",
   email: "mariemjlassi515@gmail.com",
   phone: "+216 94 381 426",
   github: "github.com/Mariemjlassi",
   linkedin: "https://www.linkedin.com/in/mariem-jlassi-674103287/",
-  
-  bio: `Passionnée par le développement Full Stack
-et la sécurité des applications.
 
-Je conçois des solutions fiables, évolutives
-et sécurisées : Spring Boot, Angular, React.
+  bio: `Passionate about Full Stack Development
+and application security.
 
-Étudiante ingénieure 1ère année à iTeam,
-Licence en Technologies de l'Informatique.
-Membre Securinets & HR Manager IEEE. ☕`,
+I build reliable, scalable and secure
+solutions: Spring Boot, Angular, React.
+
+1st year Engineering student at iTeam,
+Bachelor's in Information Technology.
+Securinets member & IEEE HR Manager.`,
 };
 
 export const EXPERIENCE = [
   {
-    period: "Fév 2025 — Mai 2025",
-    role: "Projet de Fin d'Études (noté Excellent)",
+    period: "Feb 2025 — May 2025",
+    role: "Final Year Project (Rated Excellent)",
     company: "ASSAD Batterie — Bou Argoub",
-    desc: `Conception & développement d'OrgaRH,
-application web complète de gestion des carrières.
-Auth sécurisée reCAPTCHA, dashboard prédictif
-TensorFlow, chatbot RASA, gestion des rôles.
+    desc: `Design & development of OrgaRH,
+a full-stack HR career management platform.
+Secure reCAPTCHA auth, predictive TensorFlow
+dashboard, RASA chatbot, role management,
+internal messaging system.
 Stack: Spring Boot, Angular, PrimeNG, PostgreSQL,
 TensorFlow, RASA, Swagger, Cypress, Git.`,
   },
   {
-    period: "Jan 2024 — Fév 2024",
-    role: "Stagiaire Full Stack Developer",
-    company: "CNI — Centre National de l'Informatique, Tunis",
-    desc: `Développement d'un site web pour le calcul
-des taxes locatives des terrains non bâtis.
-Architecture modulaire, sécurisation Spring Security.
+    period: "Jan 2024 — Feb 2024",
+    role: "Full Stack Developer Intern",
+    company: "CNI — National Computer Center, Tunis",
+    desc: `Development of a web application for
+calculating rental taxes on undeveloped land.
+Modular architecture, Spring Security hardening.
 Stack: Spring Boot, Angular, PostgreSQL.`,
   },
   {
     period: "2026",
-    role: "Projet Académique — Smart Intersection",
+    role: "Academic Project — Smart Intersection",
     company: "iTeam University — Tunis",
-    desc: `Simulation d'intersection intelligente 4 voies
-avec feux adaptatifs en temps réel, priorité ambulance,
-gestion piétons, module météo, détection de collision.
+    desc: `Real-time simulation of a 4-way smart
+intersection with adaptive traffic lights,
+ambulance priority, pedestrian management,
+weather module and collision detection.
 Stack: Python, Pygame, NumPy, SQLite3.`,
   },
 ];
@@ -60,17 +62,17 @@ export const EDUCATION = [
   {
     year: "2025 — 2028",
     degree: "Bachelor of Engineering in Computer Science",
-    school: "iTeam University, Tunisia (1ère année — Tronc commun)",
+    school: "iTeam University, Tunisia (1st year — Common Core)",
   },
   {
     year: "2022 — 2025",
-    degree: "Licence en Technologies de l'Informatique",
-    school: "ISET Radès — Développement des Systèmes d'Information",
+    degree: "Bachelor's in Information Technology",
+    school: "ISET Radès — Information Systems Development",
   },
   {
     year: "2020 — 2021",
-    degree: "Baccalauréat en Sciences Expérimentales",
-    school: "Lycée Ibn Mandhour, Borj El Amri",
+    degree: "Baccalaureate in Experimental Sciences",
+    school: "Ibn Mandhour High School, Borj El Amri",
   },
 ];
 
@@ -99,7 +101,7 @@ export const SKILLS = {
   ],
   Tools: [
     { name: "Git",                  level: 88 },
-    { name: "Cypress (tests E2E)",  level: 78 },
+    { name: "Cypress (E2E tests)",  level: 78 },
     { name: "JUnit",                level: 72 },
     { name: "Postman / Swagger",    level: 85 },
     { name: "Jira / Scrum",         level: 80 },
@@ -124,22 +126,35 @@ export const PROJECTS = [
     id: "orgarh",
     name: "ORGARH.exe",
     icon: "ORGARH",
-    category: "Full Stack",
-    description: "Application web complète de gestion des carrières RH. PFE noté Excellent. Auth reCAPTCHA, dashboard TensorFlow, chatbot RASA.",
-    longDescription: `Application web full-stack de gestion
-des carrières pour ASSAD Batterie.
+    category: "C:/ROOT/ORGARH.exe",
+    description: "Full-stack HR career management platform. Final Year Project rated Excellent. reCAPTCHA auth, TensorFlow dashboard, RASA chatbot.",
+    longDescription: `Full-stack HR management platform
+built for ASSAD Batterie. Rated EXCELLENT.
 
-Authentification sécurisée reCAPTCHA
-avec blocage après tentatives échouées.
-Gestion employés, formations, diplômes,
-postes, compétences et disciplines.
-Dashboard prédictif TensorFlow.
-Chatbot RASA pour assistance RH.
-Tests E2E Cypress, Agile/Scrum Jira.
+>> AUTH & SECURITY
+reCAPTCHA + brute-force protection
+Role-based access control (RBAC)
 
-Résultat : Noté EXCELLENT`,
+>> CORE MODULES
+Employee lifecycle management
+Training & certification tracking
+Career path & promotion system
+
+>> AI & MONITORING
+Predictive dashboard — TensorFlow
+Real-time system monitoring
+Automated reporting & analytics
+
+>> COMMUNICATION
+RASA chatbot for HR assistance
+Internal messaging system
+Email notifications & alerts
+
+>> QUALITY
+E2E testing — Cypress
+Agile/Scrum — Jira
+API docs — Swagger`,
     tech: ["Spring Boot", "Angular", "PrimeNG", "PostgreSQL", "TensorFlow", "RASA", "Cypress", "Git"],
-    
     demo: null,
     stars: 0,
     year: 2025,
@@ -148,18 +163,25 @@ Résultat : Noté EXCELLENT`,
     id: "smart-intersection",
     name: "SMART-INTERSECTION.exe",
     icon: "TRAFFIC",
-    category: "Simulation / AI",
-    description: "Simulation d'intersection intelligente 4 voies avec feux adaptatifs, priorité ambulance, détection collision.",
-    longDescription: `Simulation temps-réel d'une intersection
-intelligente à 4 voies.
+    category: "C:/SIM/PYGAME",
+    description: "Real-time simulation of a 4-way smart intersection with adaptive traffic lights, ambulance priority and collision detection.",
+    longDescription: `Real-time simulation of a 4-way
+smart intersection.
 
-Feux adaptatifs (10s–35s dynamique),
-priorité ambulance automatique,
-gestion des piétons, module météo
-et détection de collision.
+>> TRAFFIC CONTROL
+Adaptive lights (10s–35s dynamic)
+Ambulance automatic priority
+Pedestrian management system
 
-Architecture MVC modulaire complète
-avec dashboard de contrôle.`,
+>> MONITORING
+Weather module integration
+Collision detection engine
+Control dashboard
+
+>> ARCHITECTURE
+Full MVC modular design
+SQLite data persistence
+Clean separation of concerns`,
     tech: ["Python", "Pygame", "NumPy", "SQLite3", "MVC"],
     gitlab: "https://gitlab.com/MariemJlassi20/adaptive-traffic-simulation",
     demo: null,
@@ -170,16 +192,28 @@ avec dashboard de contrôle.`,
     id: "tax-calculator",
     name: "TAX-CALCULATOR.exe",
     icon: "CALC",
-    category: "Web App",
-    description: "Application web de calcul des taxes locatives pour terrains non bâtis. Stage CNI Tunis. Architecture modulaire sécurisée.",
-    longDescription: `Application web développée au CNI
-(Centre National de l'Informatique).
+    category: "C:/GOV/FULLSTACK",
+    description: "Web application for rental tax calculation on undeveloped land. CNI Tunis internship. Modular secured architecture.",
+    longDescription: `Web application built at CNI
+(National Computer Center, Tunisia).
 
-Calcul des taxes locatives pour
-les terrains non bâtis en Tunisie.
-Architecture modulaire, sécurisation
-via Spring Security, contrôle d'accès,
-protection contre les vulnérabilités.`,
+>> CORE FEATURE
+Rental tax calculator for
+undeveloped land in Tunisia
+
+>> SECURITY
+Spring Security hardening
+Role-based access control
+Vulnerability protection
+
+>> ARCHITECTURE
+Modular layered design
+RESTful API with Swagger docs
+PostgreSQL data management
+
+>> CONTEXT
+Government internship project
+Production-grade codebase`,
     tech: ["Spring Boot", "Angular", "Spring Security", "PostgreSQL", "REST API"],
     github: "https://github.com/Mariemjlassi/ProjetStagePerfectionnement",
     demo: null,
@@ -190,20 +224,34 @@ protection contre les vulnérabilités.`,
     id: "portfolio-os",
     name: "PORTFOLIO-OS.exe",
     icon: "PORTFOLIO",
-    category: "Creative",
-    description: "Ce portfolio ! Interface OS rétro Windows 95 + MS-DOS. React + Vite. Déployé sur Netlify.",
-    longDescription: `Portfolio interactif simulant Windows 95
-et MS-DOS. Fenêtres draggables, terminal
-fonctionnel, boot sequence animée.
-Pur React + Vite, zéro framework UI.
+    category: "C:/WIN95/YOU_ARE_HERE",
+    description: "This portfolio! Retro Windows 95 + MS-DOS OS interface. React + Vite. Deployed on Netlify.",
+    longDescription: `Interactive portfolio simulating
+Windows 95 and MS-DOS.
 
-Effets CRT scanlines, Start Menu,
-Taskbar, Shut Down animation,
-15+ commandes MS-DOS.`,
+>> UI / UX
+Draggable & resizable windows
+Retro CRT scanlines effect
+Pixel-art icons (2px grid)
+
+>> FEATURES
+Functional MS-DOS terminal
+15+ working commands
+Boot sequence animation
+Start Menu & Taskbar
+Shut Down animation
+
+>> TECH
+Pure React + Vite, zero UI framework
+Custom Win95 CSS components
+EmailJS contact form
+Deployed on Netlify
+
+>> YOU ARE HERE`,
     tech: ["React", "Vite", "CSS3", "Netlify", "VT323 Font"],
     github: "https://github.com/Mariemjlassi/mariem-os-portfolio",
-    demo: "https://mariem-jlassi.netlify.app",
+    demo: "https://mariem-os.netlify.app",
     stars: 0,
-    year: 2025,
+    year: 2026,
   },
 ];
