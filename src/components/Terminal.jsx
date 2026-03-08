@@ -22,7 +22,7 @@ function buildHelp() {
     { text: '', type: 'out' },
     { text: 'System:', type: 'label' },
     { text: '  VER          — OS version info', type: 'out' },
-    { text: '  WHOAMI       — Identity info', type: 'out' },
+    { text: '  WHO IS SHE       — Identity info', type: 'out' },
     { text: '  SYSINFO      — System information', type: 'out' },
     { text: '  UPTIME       — Show system uptime', type: 'out' },
     { text: '  DATE         — Current date & time', type: 'out' },
@@ -101,7 +101,8 @@ export default function Terminal({ onOpenWindow, onClose }) {
         ]);
         break;
 
-      case 'WHOAMI':
+      case 'WHO IS SHE':
+        
         appendLines([
           { text: '', type: 'out' },
           { text: `  ${USER.name}`, type: 'green' },
