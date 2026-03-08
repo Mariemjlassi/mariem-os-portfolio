@@ -5,7 +5,7 @@
 
 export const USER = {
   name: "Mariem Jlassi",
-  title: "Full-Stack Developer | Junior Frontend Developer",
+  title: "Full-Stack Developer | Engineering Student",
   location: "Borj El Amri, Tunisia 🇹🇳",
   status: "OPEN TO WORK",
   email: "mariemjlassi515@gmail.com",
